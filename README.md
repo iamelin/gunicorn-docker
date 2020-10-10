@@ -4,11 +4,17 @@ This is a small and fast Docker image to fast deploy your applications via Gunic
 
 All images are based on Python-Alpine images.
 
+**GitHub Repository Page**: [https://github.com/iamelin/gunicorn-docker](https://github.com/iamelin/gunicorn-docker)
+
+**Docker Hub Page**: [https://hub.docker.com/r/amelin/gunicorn](https://hub.docker.com/r/amelin/gunicorn)
+
+
 ## Supported tags
 
 * python3.8
 * python3.7
 * python3.6
+
 
 ## Quick Start
 
@@ -25,6 +31,7 @@ ADD ./app/ /app
 ```
 
 That's all! Now build your image and start container. Your application will listen port 5000.
+
 
 ## Configuration
 
