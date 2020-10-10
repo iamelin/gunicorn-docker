@@ -1,0 +1,16 @@
+FROM python:3.7-alpine3.12
+
+LABEL maintainer="Igor Amelin <i.amelin95@yandex.ru>"
+
+RUN apk add --no-cache tzdata \
+    && pip install --no-cache-dir gunicorn
+
+ADD docker-entrypoint.sh start.sh /
+
+ADD app/ /app
+WORKDIR /app
+
+EXPOSE 5000
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/start.sh"]

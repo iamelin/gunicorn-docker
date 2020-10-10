@@ -1,0 +1,6 @@
+# Ignore everything...
+*
+# except app directory and startup scripts
+!app/*
+!docker-entrypoint.sh
+!start.sh
