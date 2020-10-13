@@ -1,5 +1,8 @@
 # Gunicorn Server in Docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/amelin/gunicorn.svg?logo=docker&logoColor=white&style=for-the-badge)](https://hub.docker.com/r/amelin/gunicorn/)
+
+
 This is a small and fast Docker image to fast deploy your applications via Gunicorn server.
 
 All images are based on Python-Alpine images.
