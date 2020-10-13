@@ -31,7 +31,9 @@ FROM amelin/gunicorn:python3.8
 ADD ./app/ /app
 ```
 
-That's all! Now build your image and start container. Your application will listen port 5000.
+That's all! Now build your image and start a new container. If the file /app/requirements.txt
+exists, packages will be installed automatically before starting the application.
+Then you can send requests to your application that listens port 5000.
 
 
 ## Configuration

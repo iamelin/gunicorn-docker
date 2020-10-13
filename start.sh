@@ -7,4 +7,10 @@ if [ -f $PRESTART_SCRIPT_PATH ]; then
     . $PRESTART_SCRIPT_PATH
 fi
 
+REQUIREMENTS_PATH=/app/requirements.txt
+if [ -f $REQUIREMENTS_PATH ]; then
+    echo "Found requirements.txt. Install packages..."
+    pip install -r requirements.txt
+fi
+
 exec gunicorn -c $GUNICORN_CONFIG $APP
