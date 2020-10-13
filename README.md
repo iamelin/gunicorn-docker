@@ -14,6 +14,7 @@ All images are based on Python-Alpine images.
 
 ## Supported tags
 
+* python3.9
 * python3.8
 * python3.7
 * python3.6
